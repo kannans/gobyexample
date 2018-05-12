@@ -17,6 +17,6 @@ func main() {
 	fmt.Println(m)
 
 	_, prs := m["k1"]
-	fmt.Println("prs:", prs)
+	fmt.Println("prs:y", prs)
 }
 

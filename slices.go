@@ -48,12 +48,27 @@ func main() {
 	fmt.Println("str: ", str)
 
 	twoD := make([][]int, 13)
-    for i := 0; i < 13; i++ {
-        innerLen := i + 1
-        twoD[i] = make([]int, innerLen)
-        for j := 0; j < innerLen; j++ {
-            twoD[i][j] = i + j
-        }
-    }
-    fmt.Println("2d: ", twoD)
+    	for i := 0; i < 13; i++ {
+        	innerLen := i + 1
+       		twoD[i] = make([]int, innerLen)
+        	for j := 0; j < innerLen; j++ {
+           	  twoD[i][j] = i + j
+        	}
+    	}
+    	fmt.Println("2d: ", twoD)
+
+
+	ok := make([]int, 3)
+	fmt.Println("Slice:", ok)
+	ok[1] = 23
+	ok[2] = 21
+	ok[0] = 25
+
+	ok = append(ok, 101)
+	ok = append(ok, 1002)
+	ok = append(ok, 1003)
+	fmt.Println("assigned slice", ok)
+
+	fmt.Println("Cap", cap(ok))
 }
+	
